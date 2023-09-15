@@ -112,9 +112,11 @@ h6 {
   --neutral-very-dark-blue: hsl(209, 33%, 12%);
 }
 header {
-  margin: 5% auto;
+  /* margin: 50px auto; */
+  margin: 85px auto 20px auto;
   text-align: center;
 }
+
 body {
   font-family: "Libre Franklin", sans-serif;
   font-size: 20px;
@@ -122,6 +124,8 @@ body {
 }
 .container {
   text-align: center;
+  margin: 50px 0;
+  padding: 20px;
 }
 .heading {
   font-weight: 300;
@@ -196,4 +200,42 @@ button {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 600px) {
+  header img {
+    vertical-align: top;
+    width: 50px;
+  }
+  .heading {
+    /* font-weight: 300; */
+    font-size: 20px;
+  }
+  .cta {
+    /* margin: 20px; */
+    /* font-weight: 400; */
+    font-size: 11px;
+  }
+  #form {
+    margin: 25px 0;
+  }
+  .email,
+  button {
+    /* margin: 0 15px; */
+    /* padding: 10px 30px; */
+    /* border: 2px solid var(--secondary-pale-blue); */
+    /* border-radius: 50px; */
+    /* color: var(--secondary-pale-blue); */
+    /* font-size: 15px; */
+    margin: 7px;
+    width: 270px;
+    height: 45px;
+    font-size: 13px;
+  }
+  .image {
+    margin: 50px 0;
+  }
+  .image img {
+    max-width: 300px;
+  }
 }
