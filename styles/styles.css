@@ -25,11 +25,7 @@
 
 font-family: 'Libre Franklin', sans-serif;
 - Weights: 300, 600, 700 */
-body {
-  font-family: "Libre Franklin", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-}
+
 /*Setting to zero*/
 * {
   padding: 0;
@@ -106,6 +102,68 @@ h6 {
   font-weight: inherit;
 }
 /*--------------------*/
+:root {
+  --primary-blue: hsl(223, 87%, 63%);
+
+  --secondary-pale-blue: hsl(223, 100%, 88%);
+  --secondary-light-red: hsl(354, 100%, 66%);
+
+  --neutral-gray: hsl(0, 0%, 59%);
+  --neutral-very-dark-blue: hsl(209, 33%, 12%);
+}
+header {
+  margin: 5% auto;
+  text-align: center;
+}
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: var(--neutral-gray);
+}
+.container {
+  text-align: center;
+}
+.heading {
+  font-size: 48px;
+}
+.heading strong {
+  font-weight: 600;
+  color: var(--neutral-very-dark-blue);
+}
+.cta {
+  font-weight: 400;
+}
+#form {
+  margin: 50px 0;
+}
+.email {
+  margin: 0 15px;
+  padding: 10px 20px;
+  border: 2px solid var(--secondary-pale-blue);
+  border-radius: 50px;
+  color: var(--secondary-pale-blue);
+  width: 300px;
+  height: 50px;
+}
+button {
+  padding: 10px;
+  background-color: var(--primary-blue);
+  border-radius: 50px;
+  color: white;
+  width: 150px;
+  height: 50px;
+}
+.image {
+  margin: 70px 0;
+}
+.image img {
+  max-width: 650px;
+}
+.aka-footer {
+  font-size: 15px;
+  text-align: center;
+}
 /* footer */
 .attribution {
   font-size: 11px;
