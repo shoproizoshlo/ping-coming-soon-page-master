@@ -1,30 +1,12 @@
-/* 
-## Colors
+:root {
+  --primary-blue: hsl(223, 87%, 63%);
 
-### Primary
+  --secondary-pale-blue: hsl(223, 100%, 88%);
+  --secondary-light-red: hsl(354, 100%, 66%);
 
-- Blue: hsl(223, 87%, 63%)
-
-### Secondary
-
-- Pale Blue: hsl(223, 100%, 88%)
-- Light Red: hsl(354, 100%, 66%)
-
-### Neutral
-
-- Gray: hsl(0, 0%, 59%)
-- Very Dark Blue: hsl(209, 33%, 12%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 20px
-
-### Fonts
-
-font-family: 'Libre Franklin', sans-serif;
-- Weights: 300, 600, 700 */
+  --neutral-gray: hsl(0, 0%, 59%);
+  --neutral-very-dark-blue: hsl(209, 33%, 12%);
+}
 
 /*Setting to zero*/
 * {
@@ -103,29 +85,18 @@ h6 {
 }
 /*--------------------*/
 /* error classes */
-/* .input-control.error input {
-    border-color: #ff3860;
-}
-.error {
-  display: block;
-  margin: 5px 3px 10px 0;
-  text-align: end;
-  font-style: italic;
-  color: #ff3860;
-  font-size: 9px;
-  height: 13px;
-} */
-.input-control.success input {
-  border-color: #09c372;
-}
-
 .input-control.error input {
-  border-color: #ff3860;
+  border-color: var(--secondary-light-red);
 }
 
 .input-control .error {
-  color: #ff3860;
-  font-size: 9px;
+  display: block;
+  padding: 2px 45px;
+  margin: 5px 3px 10px 0;
+  text-align: start;
+  font-style: italic;
+  color: var(--secondary-light-red);
+  font-size: 10px;
   height: 13px;
 }
 /*--------------------*/
@@ -134,15 +105,7 @@ h6 {
   visibility: hidden;
 }
 /*--------------------*/
-:root {
-  --primary-blue: hsl(223, 87%, 63%);
 
-  --secondary-pale-blue: hsl(223, 100%, 88%);
-  --secondary-light-red: hsl(354, 100%, 66%);
-
-  --neutral-gray: hsl(0, 0%, 59%);
-  --neutral-very-dark-blue: hsl(209, 33%, 12%);
-}
 header {
   /* margin: 50px auto; */
   margin: 85px auto 20px auto;
@@ -173,6 +136,9 @@ body {
 }
 #form {
   margin: 50px 0;
+  flex-direction: row;
+  align-items: top;
+  justify-content: center;
 }
 .email {
   margin: 0 15px;
@@ -235,6 +201,9 @@ button {
 }
 
 @media screen and (max-width: 600px) {
+  .error {
+    margin: 5px 0 20px 0;
+  }
   header img {
     vertical-align: top;
     width: 50px;
@@ -250,6 +219,8 @@ button {
   }
   #form {
     margin: 25px 0;
+    flex-direction: column;
+    align-items: center;
   }
   .email,
   button {

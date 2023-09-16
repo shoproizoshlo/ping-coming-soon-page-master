@@ -11,6 +11,7 @@ const setError = (element, message) => {
   const errorDisplay = inputControl.querySelector(".error");
 
   errorDisplay.innerText = message;
+  errorDisplay.style.display = "block";
   inputControl.classList.add("error");
 };
 
@@ -31,9 +32,7 @@ const isValidEmail = (email) => {
 const validateInputs = () => {
   const emailValue = email.value.trim();
 
-  if (emailValue === "") {
-    setError(email, "Email is required");
-  } else if (!isValidEmail(emailValue)) {
+  if (!isValidEmail(emailValue)) {
     setError(email, "Please provide a valid email address");
   } else {
     setSuccess(email);
