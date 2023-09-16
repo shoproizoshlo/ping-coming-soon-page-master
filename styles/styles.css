@@ -102,6 +102,38 @@ h6 {
   font-weight: inherit;
 }
 /*--------------------*/
+/* error classes */
+/* .input-control.error input {
+    border-color: #ff3860;
+}
+.error {
+  display: block;
+  margin: 5px 3px 10px 0;
+  text-align: end;
+  font-style: italic;
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+} */
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
+/*--------------------*/
+/* useful */
+.hidden {
+  visibility: hidden;
+}
+/*--------------------*/
 :root {
   --primary-blue: hsl(223, 87%, 63%);
 
