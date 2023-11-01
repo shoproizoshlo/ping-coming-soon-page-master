@@ -1,6 +1,6 @@
 # Frontend Mentor - Ping coming soon page solution
 
-This is a solution to the [Ping coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Ping coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da). 
 
 ## Table of contents
 
@@ -33,7 +33,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/shoproizoshlo/ping-coming-soon-page-master
 - Live Site URL: https://sue-ping-coming-soon-page-master.netlify.app/
 
 ## My process
@@ -51,6 +50,4 @@ Users should be able to:
 
 ## Author
 
-- Website - [Sue Brechko](https://github.com/shoproizoshlo/)
 - Frontend Mentor - [@shoproizoshlo](https://www.frontendmentor.io/profile/shoproizoshlo)
-- Twitter - [@suereact](https://www.twitter.com/suereact)
